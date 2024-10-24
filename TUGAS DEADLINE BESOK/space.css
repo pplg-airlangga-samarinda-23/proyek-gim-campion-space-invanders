@@ -1,8 +1,23 @@
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
-#board {
-    background-color: black;
+#gameCanvas {
+    border: 1px solid white;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
 }
