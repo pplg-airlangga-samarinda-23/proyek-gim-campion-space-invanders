@@ -44,7 +44,7 @@ let bulletVelocityY = -10;
 let score = 0;
 let gameOver = false;
 
-// For Game Over message and button
+// For Game Over message and button    
 let continueButton;
 
 window.onload = function() {
@@ -68,6 +68,7 @@ window.onload = function() {
     // Create continue button for game over
     createContinueButton();
 
+// move
     requestAnimationFrame(update);
     document.addEventListener("keydown", moveShip);
     document.addEventListener("keyup", shoot);
@@ -217,8 +218,8 @@ function createContinueButton() {
     continueButton.style.position = "absolute";
     continueButton.style.top = boardHeight / 2 + 100 + "px";
     continueButton.style.left = boardWidth / 2 - 50 + "px";
-    continueButton.style.padding = "10px 20px";
-    continueButton.style.fontSize = "18px";
+    continueButton.style.padding = "10px 40px";
+    continueButton.style.fontSize = "20px";
     continueButton.style.display = "none"; // Hidden initially
     document.body.appendChild(continueButton);
 
